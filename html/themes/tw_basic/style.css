@@ -21,11 +21,11 @@ body 				{
 
 #header_image {
 	height:160px;
-	margin-left:-40px;
+	padding-left:20px;
   background:url(images/header.png) no-repeat;
 }
 #header_image h1 {
-	margin-left:10px;
+	margin-left:30px;
 }
 
 #main-content {
@@ -35,6 +35,9 @@ body.home #main-content {
 	padding:20px 0 30px;
 }
 
+#center_contents {
+	padding-top:18px;
+}
 body.home #center_contents {
 	padding-top:18px;
 }

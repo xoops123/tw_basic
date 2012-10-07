@@ -16,8 +16,6 @@
 <{/if}>
 <{if $xoops_module_header}><{$xoops_module_header}><{/if}><{if $xoops_block_header}><{$xoops_block_header}><{/if}>
 <link rel="stylesheet" type="text/css" href="<{$xoops_imageurl}>style.css" />
-<link rel="stylesheet" type="text/css" href="<{$xoops_imageurl}>modules.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_imageurl}>colors.css" charset="utf-8" />
 <{include file="`$xoops_theme`/theme_redirect_js.html"}>
 <{include file="`$xoops_theme`/theme_ext_js.html"}>
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -69,7 +67,7 @@
 </div><!-- /container -->
 </header>
 
-<div id="wrap"><{* main contents *}>
+<{* main contents *}>
 
 <div class="container">
 <div class="row">
@@ -218,7 +216,6 @@
 </div><!-- /row -->
 
 </div><!-- /container -->
-</div><!-- /wrap -->
 
 <{* /contents *}>
 

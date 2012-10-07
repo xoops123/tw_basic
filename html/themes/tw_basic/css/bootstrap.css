@@ -148,7 +148,7 @@ a:hover {
   text-decoration: underline;
 }
 .row {
-  margin-left: -20px;
+  margin-left: 0px;
   *zoom: 1;
 }
 .row:before,
@@ -4561,7 +4561,7 @@ button.close {
 }
 @media (min-width: 1200px) {
   .row {
-    margin-left: -30px;
+    margin-left: -10px;
     *zoom: 1;
   }
   .row:before,
