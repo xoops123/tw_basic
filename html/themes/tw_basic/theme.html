@@ -4,9 +4,13 @@
 <{include_php file="`$smarty.const.XOOPS_THEME_PATH`/`$xoops_theme`/xugj_already_js.php"}>
 <!DOCTYPE html>
 <{/strip}>
-<html lang="<{$xoops_langcode}>" prefix="og: http://ogp.me/ns#">
+<html lang="<{$xoops_langcode}>">
 <head>
-<{include file="`$smarty.const.XOOPS_ROOT_PATH`/common/ogp/meta_add.html"}>
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}> <{$xoops_meta_copyright}>" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" type="text/css" href="<{$xoops_imageurl}>css/bootstrap.css" />
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -16,8 +20,6 @@
 <{/if}>
 <{if $xoops_module_header}><{$xoops_module_header}><{/if}><{if $xoops_block_header}><{$xoops_block_header}><{/if}>
 <link rel="stylesheet" type="text/css" href="<{$xoops_imageurl}>style.css" />
-<{include file="`$xoops_theme`/theme_redirect_js.html"}>
-<{include file="`$xoops_theme`/theme_ext_js.html"}>
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
