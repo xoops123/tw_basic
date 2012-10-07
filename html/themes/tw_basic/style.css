@@ -11,7 +11,7 @@ body 				{
 	transition-timing-function: linear, ease-in;
 }
 
-header#overview {
+#overview {
 	height:160px;
   background:#38a1db;
 	-moz-box-shadow: 0px 5px 5px rgba(0,0,0,0.3); /* Firefox用 */
@@ -35,8 +35,10 @@ body.home #main-content {
 	padding:20px 0 30px;
 }
 
-#center_contents {
+body.home #center_contents {
+	padding-top:18px;
 }
+
 #side_bar {
 	padding-top:20px;
 }
@@ -160,10 +162,6 @@ ul#privatemessages li a,
 }
 .margin20 {
 	margin-left:20px;
-}
-.margin20r {
-	margin-right:-20px;
-	padding-right:20px;
 }
 
 /* bootstrap add */

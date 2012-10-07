@@ -79,7 +79,7 @@
 
 		<{foreach item=block from=$xoops_lblocks name=lbloop}>
 			<div class="row">
-				<{if ! $block.title|strstr:"none"}><h4><{$block.title}></h4><{/if}>
+				<{if ! $block.title|strstr:"none"}><h3><{$block.title|regex_replace:"/\[\[\w+/":""}></h3><{/if}>
 				<{$block.content}>
 			</div>
 		<{/foreach}>
@@ -105,7 +105,7 @@
    <{foreach item=block from=$xoops_ccblocks name=ccloop}>
 	   <{if $block.weight == 0 }>
 			<div>
-		    <{if ! $block.title|strstr:"none"}><h2 class="BlockTitle"><{$block.title}></h2><{/if}>
+		    <{if ! $block.title|strstr:"none"}><h2 class="BlockTitle"><{$block.title|regex_replace:"/\[\[\w+/":""}></h2><{/if}>
 		    <div class="BlockContent"><{$block.content}></div>
 	   </div>
 		 <{/if}>
@@ -120,7 +120,7 @@
 	<{foreach item=block from=$xoops_ccblocks name=ccloop}>
 		<{if $block.weight >= 1 }>
 			<div>
-			    <{if ! $block.title|strstr:"none"}><h2 class="BlockTitle"><{$block.title}></h2><{/if}>
+			    <{if ! $block.title|strstr:"none"}><h3 class="BlockTitle"><{$block.title|regex_replace:"/\[\[\w+/":""}></h3><{/if}>
 			    <div class="BlockContent"><{$block.content}></div>
 	   </div>
 	 	<{/if}>
@@ -155,7 +155,7 @@
 		6
 		<{/if}>
 		"><{/strip}>
-			    <{if ! $block.title|strstr:"none"}><h2 class="BlockTitle"><{$block.title}></h2><{/if}>
+			    <{if ! $block.title|strstr:"none"}><h3 class="BlockTitle"><{$block.title|regex_replace:"/\[\[\w+/":""}></h3><{/if}>
 			    <div class="BlockContent"><{$block.content}></div>
 	   </div>
 	<{/foreach}>
@@ -189,7 +189,7 @@
 		6
 		<{/if}>
 		"><{/strip}>
-				    <{if ! $block.title|strstr:"none"}><h2 class="BlockTitle"><{$block.title}></h2><{/if}>
+				    <{if ! $block.title|strstr:"none"}><h3 class="BlockTitle"><{$block.title|regex_replace:"/\[\[\w+/":""}></h3><{/if}>
 				    <div class="BlockContent"><{$block.content}></div>
 		   </div>
 	    <{/foreach}>
@@ -207,7 +207,7 @@
 
 		<{foreach item=block from=$xoops_rblocks name=rbloop}>
 			<div>
-				<{if ! $block.title|strstr:"none"}><h4><{$block.title}></h4><{/if}>
+				<{if ! $block.title|strstr:"none"}><h3><{$block.title|regex_replace:"/\[\[\w+/":""}></h3><{/if}>
 				<{$block.content}>
 			</div>
 		<{/foreach}>
@@ -246,6 +246,5 @@
 </footer>
 
 <div id="xugj_pm_new_message" class="top-right"></div>
-
 </body>
 </html>
