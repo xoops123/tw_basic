@@ -11,6 +11,18 @@ body 				{
 	transition-timing-function: linear, ease-in;
 }
 
+/*  for IE */
+.row {
+  margin-left: 0px¥9;
+  *zoom: 1;
+}
+.row:not(:target) {
+  margin-left: 0px¥9;
+  *zoom: 1;
+}
+/*  end IE hack */
+
+
 #overview {
 	height:40px;
 /*   background:#38a1db; */
