@@ -1,0 +1,276 @@
+/* d3pipes */
+
+ul.d3pipes_block_sync_aggregated li {
+	list-style:none;
+	margin-bottom:10px;
+	border-left:7px solid #dcdcdc;
+}
+ul.d3pipes_block_sync_aggregated li dl dt {
+	padding:2px 0 1px 5px;
+}
+ul.d3pipes_block_sync_aggregated li dl dd {
+	font-size:0.8em;
+	padding:0 0 0 5px;
+	color:#8F8F8F;
+}
+
+
+/* ------------ for wordpress (xpress) -------------------- */
+
+body.wordpress {
+	width:100%;
+	margin:0;
+	padding:0;
+}
+body.wordpress .xpress-body {
+	width:100%;
+	margin:0;
+	padding:0;
+}
+body.wordpress .xpress-body #xpress_page{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+#xpress-header-bar,
+.xpress_credit {
+	display:none;
+}
+#xpress_wrap {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin:0 auto;
+	margin-top:0px;
+	padding:30px 12px 30px 0;
+}
+#xpress_footer {
+	padding-bottom:30px;
+}
+
+
+#xpress_wrap #xpress_content .xpress-post {
+	position:relative;
+	min-height:1px;
+	margin-bottom:20px;
+	width:98%;
+}
+
+#xpress_wrap #xpress_content .xpress-post-ymdl ,
+body.L0R1 .xpress-post-ymdl ,
+body.L1R1 .xpress-post-ymdl{
+	position:absolute;
+	top:15px;
+	left:15px;
+  font-family: Georgia normal, "Times New Roman", Times, serif;
+	width:95px;
+	height:90px;
+	font-size:28px;
+	font-weight:bold;
+	text-align:center;
+}
+#xpress_wrap #xpress_content .xpress-post-ymdl .xpress-post-year {
+	width:85px;
+	height:35px;
+	margin:0;
+	padding:0;
+}
+#xpress_wrap #xpress_content .xpress-post-ymdl .xpress-post-md {
+	width:85px;
+	height:30px;
+	margin:0;
+	padding:0;
+}
+#xpress_wrap #xpress_content .large_thumbnail ,
+body.wordpress .large_thumbnail{
+	float:left;
+	width:135px;
+	height:135px;
+}
+
+.xpress_block {
+	margin:0;
+	margin-left:-10px;
+	margin-top:-10px;
+	padding:0;
+	width:100%;
+}
+
+.xpress_popular_post_block ,
+.xpress_block .xpress_category_block ,
+.xpress_block .xpress_tag_cloud_block ,
+.xpress_block .xpress_recent_post_list_block ,
+.xpress_block .xpress_recent_posts_content_block ,
+.xpress_block .xpress_popular_posts_block ,
+.xpress_block .xpress_archives_block {
+	line-height:1.5;
+	width:100%;
+}
+.xpress_block .xpress_tag_cloud_block a {
+	font-family: HuiFontPRegular, fantasy;
+	margin:5px;
+}
+
+.xpress_popular_post_block ul {
+	width:98%;
+}
+.xpress_block .xpress_recent_post_list_block ul {
+	margin-bottom:10px;
+	width:95%;
+}
+.xpress_popular_post_block li ,
+.xpress_block .xpress_recent_post_list_block li {
+	margin-bottom:10px;
+	width:100%;
+}
+
+#xpress_wrap #xpress_content .xpress-post .eyecatch-image img {
+ 	float:left;
+	width:135px;
+	height:135px;	
+	margin:0 20px 20px 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+	z-index:0;
+}
+
+#xpress_wrap #xpress_content .xpress-post .large_thumbnail {
+	position:relative;
+	float:left;
+	width:20%;
+	margin:10px 20px 10px 20px;
+}
+#xpress_wrap #xpress_content .xpress-post .large_thumbnail img {
+	width:100%;
+	height:100%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+
+
+#xpress_wrap #xpress_content .xpress-post .xpress-eyecatch-post-md {
+	position:absolute;
+	top:20px;
+	left:15px;
+  font-family: Georgia normal, "Times New Roman", Times, serif;
+	width:110px;
+	height:30px;
+	font-size:30px;
+	z-index:100;
+}
+#xpress_wrap #xpress_content .xpress-post h2 {
+	margin:0 10px 10px 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#xpress_wrap #xpress_content .xpress-post h2 a{
+	line-height:1.2;
+	padding-bottom:2px;
+	font-size: 20px;
+	color:green;
+	text-decoration:none;
+}
+#xpress_wrap #xpress_content .xpress-post .xpress-post-header {
+	position:relative;
+	min-height:153px;
+	height:auto;
+}
+#xpress_wrap #xpress_content .xpress-post .xpress-post-header .xpress-post-title {
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:80%;
+	padding-left:150px;
+}
+@media screen and (max-width: 1024px) 	{
+	#xpress_wrap #xpress_content .xpress-post .xpress-post-header .xpress-post-title {
+		width:70%;
+	}
+}
+@media screen and (max-width: 740px) 	{
+	#xpress_wrap #xpress_content .xpress-post .xpress-post-header .xpress-post-title {
+		width:50%;
+	}
+	#xpress_wrap #xpress_content .xpress-post .xpress-post-header {
+		height:200px;
+	}
+}
+
+
+#xpress_wrap #xpress_content .xpress-post .xpress-post-header .xpress-post-title h2 {
+	width:90%;
+}
+#xpress_wrap #xpress_content .xpress-post .xpress-post-header .xpress-post-excerpt {
+	position:relative;
+	width:90%;
+	padding:1%;
+	margin:0 0 0 20px;
+	font-size:120%;
+	line-height:1.5;
+}
+
+#xpress_wrap #xpress_content .xpress-navi-bar {
+	position:relative;
+	width:100%;
+	min-height:1px;
+}
+#xpress_wrap #xpress_content .xpress-navi-bar .alignright {
+	position:relative;
+	float: right;
+	height:20px;
+	width:45%;
+	text-align:right;
+}
+
+#xpress_wrap #xpress_content .xpress-navi-bar .alignleft {
+	position:relative;
+	float: left
+	height:20px;
+	width:45%;
+}
+.xpress-post-entry {
+	margin-top:10px;
+	padding:14px 10px 10px 10px;
+	font-size:14px;
+	line-height:24px;
+}
+.xpress-post-entry p {
+	text-indent:1em;
+	font-size:14px;
+	line-height:24px;
+}
+.xpress-post-entry img {
+	margin:0;
+	padding:0;
+}
+.xpress-post-entry blockquote {
+	margin:0 20px 0 35px;
+	padding:0 20px 0 20px;
+}
+.xpress-post-entry h3 {
+	font-size:20px;
+	line-height:24px;
+}
+
+#xpress-comments-block {
+	width:80%;
+	margin:30px 30px 30px 30px;
+}
+#xpress-comments-block h2 {
+	padding:5px 20px;
+}
+#xpress-comments-block #postform {
+	margin-left:15px;
+}
+
+
+/* End Wordpress (XpressME) */
