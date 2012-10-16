@@ -30,11 +30,10 @@ body 				{
 
 #header_image {
 	height:40px;
-	padding-left:20px;
 /*   background:url(images/header.png) no-repeat; */
 }
 #header_image h1 {
-	margin-left:30px;
+	margin-left:40px;
 }
 
 #main-content {
@@ -135,9 +134,11 @@ pre {overflow: auto; font-size: 12px; }
 .new1 {
 	margin-left:5px;
 	font-weight:bold;
+	color:red;
 }
 .new2 {
 	margin-left:5px;
+	color:red;
 }
 
 #theme_login_block_div ,
@@ -269,6 +270,10 @@ a.menu-bg {
 	body {
 		padding-top: 40px;
   }
+	.row {
+	  margin-left: -10px;
+	  *zoom: 1;
+	}
 	#header_image {
 		height:160px;
 		margin-left:-40px;
@@ -296,5 +301,9 @@ a.menu-bg {
 	body {
 		padding-top: 40px;
   }
+	.row {
+	  margin-left: -20px;
+	  *zoom: 1;
+	}
 }
 
