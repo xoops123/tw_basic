@@ -12,18 +12,28 @@
 <meta name="rating" content="<{$xoops_meta_rating}>" />
 <meta name="author" content="<{$xoops_meta_author}> <{$xoops_meta_copyright}>" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" type="text/css" href="<{$xoops_imageurl}>css/bootstrap.css" />
+<{if $smarty.server.HTTP_USER_AGENT|regex_replace:'/^.*MSIE\s*([0-9]+).*$/i':'\1' > 7}>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<{/if}>
+<link rel="stylesheet" type="text/css" href="<{$xoops_imageurl}>css/bootstrap.min.css" />
 <link href="<{$xoops_url}>/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <script type="text/javascript"><{$xoops_js|regex_replace:"/(\/\/\-\->|<!\-\-)/":""}></script>
 <{if ! $xcl22_jquery_is_already and ! $xugj_jquery_is_already}>
 <script type="text/javascript" src="<{$xoops_imageurl}>js/jquery-1.7.1.min.js"></script>
 <{/if}>
 <{if $xoops_module_header}><{$xoops_module_header}><{/if}><{if $xoops_block_header}><{$xoops_block_header}><{/if}>
+<script type="text/javascript" src="<{$xoops_imageurl}>js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="<{$xoops_imageurl}>style.css" />
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('.dropdown-toggle').dropdown()
+	});
+});
+</script>
 </head>
 <body class="L<{$xoops_showlblock}>R<{$xoops_showrblock}> <{strip}>
 <{if $smarty.server.SCRIPT_FILENAME|basename == "index.php" and $smarty.server.SCRIPT_FILENAME|dirname|basename == $smarty.const.XOOPS_ROOT_PATH|basename}>
@@ -46,15 +56,8 @@
 <div class="navbar navbar-fixed-top<{if $xoops_isadmin}><{if $xoops_dirname == "wordpress"}> fixed2<{elseif $xoops_dirname == "xpress"}> fixed2<{/if}><{/if}>">
   <div class="navbar-inner">
     <div class="container">
-        <ul class="nav">
-					<{if $menu0.dirname == $xoops_dirname}>
-						<li class="active"><a href="<{$xoops_url}>/"><{$smarty.const._THEME_LANGUAGE_HOME_NAME}></a></li>
-					<{else}>
-						<li><a href="<{$xoops_url}>/"><{$smarty.const._THEME_LANGUAGE_HOME_NAME}></a></li>
-					<{/if}>
-					<{foreach from=$xugj_menus item="menu0"}>
-						<li<{if $menu0.dirname == $xoops_dirname}> class="active"<{/if}>><a href="<{$xoops_url}>/modules/<{$menu0.dirname}>/<{$menu0.url}>"><{$menu0.name}></a></li>
-					<{/foreach}>
+        <ul class="nav" role="navigation">
+					<{include file="`$xoops_theme`/xugj_menu.html"}>
         </ul>
 	</div>
   </div>

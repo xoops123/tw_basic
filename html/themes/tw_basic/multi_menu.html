@@ -1,0 +1,19 @@
+<{* multi menu *}>
+	<{foreach item=imenu from=$multiMenuToTheme.contents name=menuloop}>
+		<li class="dropdown<{if $xoops_modulename == $imenu.title}> active<{/if}>">
+		<{if $imenu.link != ""}>
+			<{if $imenu.sublinks}>
+				<a href="<{$imenu.link}>" target="<{$imenu.target}>" role="button" class="dropdown-toggle" data-toggle="dropdown"><{$imenu.title}></a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="<{$imenu.link}>" target="<{$imenu.target}>" class="menu-bg"><{$imenu.title}></a></li>
+					<{foreach item=sublink from=$imenu.sublinks}>
+						<li><a href="<{$sublink.url}>"><{$sublink.name}></a></li>
+					<{/foreach}>
+				</ul>
+			<{else}>
+				<a href="<{$imenu.link}>" target="<{$imenu.target}>"><{$imenu.title}></a>
+			<{/if}>
+		<{/if}>
+		</li>
+	<{/foreach}>
+<{* end multi menu *}>
