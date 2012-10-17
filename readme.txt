@@ -1,5 +1,5 @@
 【テーマ名　】 tw_basic
-【バージョン】 0.13
+【バージョン】 0.14
 【作　成　者】 marine / mistgreen
 【動作　環境】 XOOPS Cube Legacy 2.1x (HD1.04)、2.2
 【ライセンス】 MIT
@@ -44,6 +44,13 @@
 ======================================================
 
 　まずは、解凍してできあがったフォルダの最下層にある「tw_basic」をFTPにてサイトのテーマ・ディレクトリへコピーしてください。（場合によっては、/coffee_time/html/themes/tw_basic/ のように、解凍したフォルダの階層が深くなっていることもありますので、ご注意ください。html/themes/の下にある tw_basic フォルダをアップロードしてください。）
+
+　d3pipesの同期ブロックを利用する場合は、xugj_dateプラグインを使いますので、サイトのプラグインディレクトリにコピーしてください。
+「plugin」ディレクトリは、XCL2.1x と XCL2.2 では場所が違うのでご注意ください。
+　　　XCL2.1xの場合　/XOOPS_ROOT_PATH/class/smarty/plugins/
+　　　XCL2.2の場合　 /XOOPS_TRUST_PATH/libs/smarty/plugins/　または
+　　　　　　　　　　 /XOOPS_TRUST_PATH/libs/smartyplugins/ 
+（preload「HdXoopsTplHook.class.php」または「HypXoopsTplHook.class.php」を使っている場合、このディレクトリが優先となります。）
 
 
 ======================================================
@@ -117,6 +124,12 @@
 　サブメニューをドロップダウンできるようにした。
 2012-10-16 ver0.13
 	style.cssを調整
+2012-10-16 ver0.14
+	style.cssを再調整
+　パンくずリストをtwitterbootstrapの様式に合わせた。
+　テキストエリアの調整と自動で伸びる機能を付加（jQueryプラグイン）
+　d3pipesの同期ブロックのみテーマ下テンプレート付けた（xugj_dateプラグイン同梱）
+
 
 ======================================================
 お願い

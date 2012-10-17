@@ -1,39 +1,47 @@
 <{strip}>
+<{if $smarty.server.SCRIPT_FILENAME|basename == "index.php" and $smarty.server.SCRIPT_FILENAME|dirname|basename == $smarty.const.XOOPS_ROOT_PATH|basename}>
+<h1><{$xoops_sitename}></h1>
+<{else}>
+<ul class="breadcrumb">
+<li><a href="<{$xoops_url}>/"><{$xoops_sitename}></a> <span class="divider">/</span></li>
 <{if $xoops_dirname == "webphoto"}>
 	<{foreach from=$xoops_breadcrumbs item="item"}>
 		<{if $item.url}>
-			<a href="<{$item.url}>"><{$item.name}></a> &nbsp;
+			<li><a href="<{$item.url}>"><{$item.name}></a> <span class="divider">/</span></li>
 		<{/if}>
 	<{/foreach}>
- 		<{$title_bread_crumb}>
+ 		<li class="active"><{$title_bread_crumb}></li>
 <{elseif $xoops_dirname == "piCal"}>
 	<{foreach from=$xoops_breadcrumbs item="item"}>
-		<{$item.name}>
+		<li class="active"><{$item.name}></li>
 	<{/foreach}>
 <{elseif $xoops_dirname == "ccenter"}>
 	<{foreach from=$xoops_breadcrumbs item="item" name="loop"}>
 		<{if $smarty.foreach.loop.first}>
-			<{$item.name}>
+			<li class="active"><{$item.name}></li>
 	  	<{/if}>
 	<{/foreach}>
 <{else}>
 	<{foreach from=$xoops_breadcrumbs item="item" name="loop"}>
 		<{if $smarty.foreach.loop.first}>
 			<{if $item.url}>
-				<a href="<{$item.url}>"><{$item.name}></a>
+				<li><a href="<{$item.url}>"><{$item.name}></a> <span class="divider">/</span></li>
 		  	<{else}>
-		        <{$item.name}>
+		        <li class="active"><{$item.name}></li>
 		  	<{/if}>
 	  	<{else}>
 			<{if $item.url}>
-				&nbsp;<a href="<{$item.url}>"><{$item.name}></a>
+				<li>&nbsp;<a href="<{$item.url}>"><{$item.name}></a> <span class="divider">/</span></li>
 		  	<{else}>
-		        &nbsp;<{$item.name}>
+		        <li class="active">&nbsp;<{$item.name}></li>
 		  	<{/if}>
 	  	<{/if}>
 	<{/foreach}>
 		<{if $xoops_dirname == "gallery"}>
-			(<{$photo_num_total}>)
+			<li class="active">(<{$photo_num_total}>)</li>
 		<{/if}>
+<{/if}>
+</ul>
+<h1 style="margin-left:-9999px;"><{$xoops_sitename}></h1>
 <{/if}>
 <{/strip}>

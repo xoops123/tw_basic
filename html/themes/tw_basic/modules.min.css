@@ -1,4 +1,7 @@
 /* d3pipes */
+ul.d3pipes_block_sync_aggregated {
+	margin-left:0;
+}
 
 ul.d3pipes_block_sync_aggregated li {
 	list-style:none;
@@ -6,7 +9,7 @@ ul.d3pipes_block_sync_aggregated li {
 	border-left:7px solid #dcdcdc;
 }
 ul.d3pipes_block_sync_aggregated li dl dt {
-	padding:2px 0 1px 5px;
+	padding:2px 0 0 5px;
 }
 ul.d3pipes_block_sync_aggregated li dl dd {
 	font-size:0.8em;

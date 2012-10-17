@@ -22,18 +22,18 @@ body 				{
 }
 /*  end IE hack */
 
+textarea{
+  width: 90%;
+}
+
 
 #overview {
-	height:40px;
-/*   background:#38a1db; */
+	height:20px;
+	padding:10px 10px 0;
 }
 
-#header_image {
-	height:40px;
-/*   background:url(images/header.png) no-repeat; */
-}
-#header_image h1 {
-	margin-left:40px;
+#overview .container ul.breadcrumb {
+	margin-left:10px;
 }
 
 #main-content {
@@ -60,10 +60,6 @@ body.home #center_contents {
 
 #right_bar {
 	padding-top:20px;
-}
-
-.fixed2 {
-  top: 28px;
 }
 
 #footer ,
