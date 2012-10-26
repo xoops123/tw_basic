@@ -226,15 +226,11 @@ jQuery(document).ready(function() {
 
 <{* /contents *}>
 
-<{* login block *}>
-<{include file="`$xoops_theme`/theme_cubelogin_block.html"}>
-
 <footer id="footer"><{* include right-column *}>
 	<div id="footer_menu">
 	<{if !$xoops_isuser}>
 		<a href="http://xoops123.com/">Theme designed by marine/mistgreen</a>&nbsp;|&nbsp;
-		<noscript><a href="<{$xoops_url}>/user.php">login(noscript)</a>&nbsp;|&nbsp;</noscript>
-		<a class="fancybox" href="#theme_login_block" title="<{$smarty.const._THEME_LANGUAGE_LOGIN}>"><{$smarty.const._THEME_LANGUAGE_LOGIN}></a>
+		<a href="<{$xoops_url}>/user.php"><{$smarty.const._THEME_LANGUAGE_LOGIN}></a>
 	<{else}>
 		<a href="<{$xoops_url}>/user.php"><{$smarty.const._THEME_LANGUAGE_USER_ACCOUNT}></a>&nbsp;|&nbsp;
 		<a href="<{$xoops_url}>/edituser.php"><{$smarty.const._THEME_LANGUAGE_EDIT_ACCOUNT}></a>&nbsp;|&nbsp;
